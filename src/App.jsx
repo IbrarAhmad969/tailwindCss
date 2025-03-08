@@ -4,7 +4,7 @@ import CurrencyExchanger from "./components/currency";
 import { useState } from "react";
 
 function App() {
-  const currencies = ["USD", "EUR", "GBP", "INR", "AUD"];
+  const currencies = ["USD", "EUR", "GBP", "PKR", "AUD"];
   const [inputVal, setInputValue] = useState(0);
   const [fromCurrencyOption, setFromCurrencyOption] = useState("USD");
   const [toCurrencyOption, setToCurrencyOption] = useState("USD");
@@ -37,11 +37,11 @@ function App() {
 
     // Example conversion rates (you can replace these with actual rates)
     const conversionRates = {
-      USD: { INR: 75, EUR: 0.92, GBP: 0.81, AUD: 1.4 },
-      EUR: { USD: 1.09, INR: 82, GBP: 0.88, AUD: 1.52 },
-      GBP: { USD: 1.24, EUR: 1.14, INR: 93, AUD: 1.73 },
-      INR: { USD: 0.013, EUR: 0.012, GBP: 0.011, AUD: 0.019 },
-      AUD: { USD: 0.71, EUR: 0.66, GBP: 0.58, INR: 53 },
+      USD: { PKR: 255, EUR: 0.92, GBP: 0.81, AUD: 1.4 },
+      EUR: { USD: 1.09, PKR: 82, GBP: 0.88, AUD: 1.52 },
+      GBP: { USD: 1.24, EUR: 1.14, PKR: 93, AUD: 1.73 },
+      PKR: { USD: 0.003, EUR: 0.012, GBP: 0.011, AUD: 0.019 },
+      AUD: { USD: 0.71, EUR: 0.66, GBP: 0.58, PKR: 53 },
     };
 
     // Set conversion rate based on selected currencies
